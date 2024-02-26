@@ -1,0 +1,48 @@
+media:
+  input: src/media
+  output: /media
+content:
+  - name: pages
+    label: Pages
+    path: src/pages
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: subtitle
+        label: Subtitle
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: content
+        label: Content
+        type: rich-text
+  - name: blog
+    label: Blog
+    path: src/blog
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: subtitle
+        label: Subtitle
+        type: string
+      - name: author
+        label: Author
+        type: string
+        required: true
+      - name: image
+        label: Image
+        type: image
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: content
+        label: Content
+        type: rich-text
